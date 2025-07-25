@@ -159,7 +159,7 @@ const updateProfile = async (req, res) => {
             message: "Profile updated successfully.",
             user,
             success: true
-        })
+        });
     } catch (error) {
         console.log(error);
         return res.status(500).json({ message: "Server error while profile update.", error });
